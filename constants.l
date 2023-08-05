@@ -4,13 +4,12 @@ int cons=0;
 %}
 %%
 [0-9]+ { cons++; printf("%s is a constant\n", yytext);  }
-.|\n { }
+.\n { }
 %%
 int yywrap() 
 {
-return 1; 
 }
-int main(int argc,char* argv[])
+int main()
 {
 printf("enter the string:\n");
 yylex();
