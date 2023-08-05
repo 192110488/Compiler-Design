@@ -4,9 +4,8 @@
 
 %%
 
-fact    factcount++;
-i         icount++;
-(.|\n)    ;
+"fact"    {factcount++;}
+"i"         {icount++;}
 
 %%
 
