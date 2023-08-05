@@ -2,15 +2,14 @@
 int nmacro, nheader; 
 %}
 %%
-^#define { nmacro++; } 
-^#include { nheader++; } 
-.|\n { } 
+#define { nmacro++; } 
+#include { nheader++; } 
+.\n { } 
 %%
 int yywrap() 
 { 
-return 1; 
 } 
-int main(int argc, char *argv[]) 
+int main() 
 { 
 printf("enter the string:\n");
 yylex(); 
