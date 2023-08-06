@@ -36,10 +36,10 @@ for(j=0;j<count;j++)
 {
 if(prodn[j][0]==c)
 {
-if(prodn[j][2]=='$')
+if(prodn[j][3]=='$')
 first[n++]='$';
-else if(islower(prodn[j][2]))
-first[n++]=prodn[j][2];
+else if(islower(prodn[j][3]))
+first[n++]=prodn[j][3];
 else
 FIRST(prodn[j][2]);
 }
